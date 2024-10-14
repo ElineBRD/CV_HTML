@@ -58,3 +58,7 @@
 .titre_cadre{
   background-image: Photos_caroussel\ProhibitedProof_Guard.jpg;
 }
+
+.bg_custom{
+  background-color:rgb(66, 75, 164)
+}
