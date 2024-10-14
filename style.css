@@ -1,0 +1,60 @@
+.background-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://wallpapercave.com/wp/wp11258908.png');
+    background-size: cover;/* Couvre l'arrière du content*/
+    background-position: center;
+    filter: blur(8px);
+    z-index: -1;
+   }
+
+  .image-speciale{
+  transform: scale(0.8) ;
+
+}
+
+.image-speciale:hover {
+  transform: scale(0.85);/*Agrandi légèrement l'image dynamiquement lorsqu'on passe dessus*/
+  transition: transform 0.3s ease;
+}
+
+.image-redim {
+ width: 100%;
+ height: auto;
+ object-fit:contain;
+
+}
+
+#Caroussel { /* "#" car je cible un "id=" et non un "class="*/
+
+  background-color: black;
+  width:960px;
+  height: 540;
+  border: 3px solid #b9833b;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+  body {
+    color: #de72e2 !important; /*j'ai mis "important" car sans, la couleur ne se changeait pas"*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+  }
+
+  h2, h3 { /*sélection des "types" de titres que je souhaite changer*/
+    color:#b36c11 !important;
+  }
+
+  .paragraphe_global{
+  padding: 5px;
+  border: 3px solid #b9833b;
+  border-radius: 10px;
+  }
+
+
+.titre_cadre{
+  background-image: Photos_caroussel\ProhibitedProof_Guard.jpg;
+}
