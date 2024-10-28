@@ -17,9 +17,9 @@
 }
 
 .image-speciale:hover {
-  transform: scale(0.85);/*Agrandi légèrement l'image dynamiquement lorsqu'on passe dessus*/
-  transition: transform 0.3s ease;
-}
+    transform: scale(0.85);/*Aggrandi légèrement l'image dynamiquement lorsqu'on passe dessus*/
+    transition: transform 0.3s ease;
+  }
 
 .image-redim {
  width: 100%;
@@ -55,10 +55,20 @@
   }
 
 
-.titre_cadre{
-  background-image: Photos_caroussel\ProhibitedProof_Guard.jpg;
+.bg_custom{
+  position: relative;
+  padding: 20px;
+  z-index: 1;
 }
 
-.bg_custom{
-  background-color:rgb(66, 75, 164)
+.bg_custom::before{
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:"/Photos_carroussel/space.jpg";
+  filter: blur(2px);
+  z-index: -1;
 }
